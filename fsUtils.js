@@ -6,11 +6,17 @@ const ratingsPath = path.join(__dirname, 'ratings.json');
 // 🔹 Read ratings.json
 function readRatings() {
     try {
-        const data = fs.readFileSync(ratingsPath, 'utf8');
+        if (!fs.existsSync(ratingsPath)) {
+            return { users: [] }; // No file yet
+        }
+        const data = fs.readFileSync(ratingsPath, 'utf8').trim();
+        if (!data) {
+            return { users: [] }; // Empty file
+        }
         return JSON.parse(data);
     } catch (err) {
         console.error('Error reading ratings.json:', err);
-        return { users: [] };
+        return { users: [] }; // Fallback
     }
 }
 
