@@ -1,0 +1,210 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("./background-img.jpg");
+    background-position: center center;
+    background-size: fixed;
+    padding: 0px;
+    color: #fdfdfd;
+}
+
+a{
+    color: inherit;
+        /* Inherit color from parent element */
+        text-decoration: none;
+}
+
+#main-heading{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 55px;
+    margin-bottom: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+#main-heading:hover {
+    font-size: 57px;
+    color:#adadad;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+#about-div{
+    margin-bottom: 30px;
+}
+#about-link{
+    margin: 20px;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: all 0.1s ease-in-out;
+}
+
+#about-link:hover{
+    background-color: rgba(73, 73, 73, 0.70);
+    font-size: 16px;
+    
+    transition: all 0.1s ease-in-out;
+}
+
+.container {
+    background-color: black;
+    max-width: 1300px;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+#movie-heading{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+    transition: all 0.2s ease-in-out;
+}
+
+#movie-heading:hover{
+    font-size: 33px;
+    color:gray;
+        transition: all 0.2s ease-in-out;
+}
+
+#movie-list{
+    margin-top: 25px;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.movie-title{
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 5px;
+    word-wrap: break-word;
+    white-space: normal;
+    text-align: center;
+    max-width: 180px;
+    transition: all 0.1s ease-in-out;
+}
+
+.movie-title:hover {
+    font-size: 15px;
+    color: gray;
+    transition: all 0.1s ease-in-out;
+}
+
+
+.movie {
+    margin-bottom: 20px;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+input[type="number"] {
+    width: 30px;
+    height: 20px;
+    background-color: #292929;
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    text-align: center;
+    transition: all 0.1s ease-in-out;
+}
+
+input[type="number"]:hover {
+    width: 34px;
+    height: 24px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+#load-more {
+    margin: 20px;
+        margin-top: 30px;
+        background-color: #292929;
+        color: white;
+        border: 1px solid white;
+        border-radius: 10px;
+        width: 100px;
+        height: 40px;
+        transition: all 0.2s ease-in-out;
+}
+
+#load-more:hover {
+    margin: 20px;
+        margin-top: 30px;
+        background-color: rgba(41, 41, 41, 0.5);
+        border: 3px solid rgb(255, 255, 255);
+        border-radius: 15px;
+        width: 120px;
+        height: 40px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+}
+
+.reco-button{
+    margin: 20px;
+    margin-top: 30px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 300px;
+    height: 50px;
+    transition: all 0.2s ease-in-out;
+}
+
+.reco-button:hover {
+    margin: 20px;
+    margin-top: 30px;
+    
+    background-color: rgb(41, 41, 41);
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    width: 320px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#recommendations{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+img{
+    width: 200px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+img:hover {
+    width: 210px;
+    border-radius: 18px;
+    border: 2px solid white;
+    transition: all 0.2s ease-in-out;
+}
+
+#reco-heading{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 33px;
+    transition: all 0.2s ease-in-out;
+}
+
+#reco-heading:hover {
+    font-size: 35px;
+    color: gray;
+    transition: all 0.2s ease-in-out;
+}

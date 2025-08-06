@@ -1,0 +1,27 @@
+{
+  "name": "recommendationx---web",
+  "version": "1.0.0",
+  "description": "The RecommendationX Web",
+  "keywords": [
+    "movies",
+    "recommendation",
+    "cosine",
+    "TMDb"
+  ],
+  "homepage": "https://github.com/HassanNawaz14/RecommendationX#readme",
+  "bugs": {
+    "url": "https://github.com/HassanNawaz14/RecommendationX/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HassanNawaz14/RecommendationX.git"
+  },
+  "license": "ISC",
+  "author": "Hassan Nawaz",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  }
+}

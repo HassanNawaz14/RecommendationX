@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About & Guide - Movie Recommender</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            margin: 0;
+        }
+        .about-container {
+            color: rgb(255, 255, 255);
+            max-width: 950px;
+            margin: 40px auto;
+            margin-top: 20px;
+            padding: 20px;
+            padding-top: 0;
+            border: 2px solid white;
+            border-radius: 8px;
+            line-height: 1.6;
+            background-color: black;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 0;
+        }
+
+        .about-container h2 {
+            color: #ffffff;
+            margin-top: 20px;
+        }
+
+        .about-container p {
+            color: #ffffff;
+        }
+
+        .about-container ul {
+            text-align: left;
+            margin-left: 20px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>About & Guide</h1>
+    <div class="about-container">
+        <h2>What It Is</h2>
+        <p>
+            Welcome to the Movie Recommender Web App!
+            This tool helps you find new movies to watch based on your ratings and other users’ preferences using the
+            cosine similarity algorithm.
+        </p>
+
+        <h2>How It Works</h2>
+        <ul>
+            <li>The app fetches movies from TMDb's Popular Movies list.</li>
+            <li>The movies list is updated constantly, your rating for the new movies is set to 0.</li>
+            <li>You rate the movies you’ve watched from 0 (not watched) to 5 (loved it).</li>
+            <li>Anything other that 1-5 is consiedered 0.</li>
+            <li>The system compares your ratings with other users and finds the most similar profiles.</li>
+            <li>Movies you haven’t rated but similar users rated highly are recommended to you.</li>
+        </ul>
+
+        <h2>Tips for Best Results</h2>
+        <ul>
+            <li>Rate at least 5–10 movies for more accurate recommendations.</li>
+            <li>Use the “Load More” button to explore additional movies from TMDb.</li>
+            <li>Click on a movie poster to search for it on Google for more details.</li>
+        </ul>
+
+        <h2>Data Privacy</h2>
+        <p>
+            Your ratings are stored only for recommendation purposes and are not shared publicly.
+        </p>
+
+        <a href="/" class="back-link">&larr; Back to Home</a>
+    </div>
+</body>
+
+</html>
