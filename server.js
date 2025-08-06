@@ -5,7 +5,7 @@ const { readRatings, writeRatings } = require('./fsUtils');
 
 const TMDB_KEY = process.env.TMDB_KEY || 'c23620ab85823d1ee2c4f18c55fa38f7';
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const mimeTypes = {
   '.html': 'text/html',
@@ -19,7 +19,13 @@ const publicPath = path.join(__dirname, 'public');
 const server = http.createServer((req, res) => {
 
   const https = require('https');
-  
+
+  if (req.method === 'GET' && req.url === '/') {
+    res.writeHead(200, { 'Content-Type': 'text/plain' });
+    res.end('OK');
+    return;
+  }
+
   if (req.method === 'GET' && req.url.startsWith('/api/movies')) {
       const urlObj = new URL(req.url, `http://${req.headers.host}`);
       const page = urlObj.searchParams.get('page') || 1;
