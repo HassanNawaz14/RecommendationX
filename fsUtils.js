@@ -1,22 +1,23 @@
 const fs = require('fs');
 const path = require('path');
 
-const ratingsPath = path.join(__dirname, 'ratings.json');
+// Store in /app/data/ratings.json when running on Railway
+const ratingsPath = process.env.RAILWAY_ENVIRONMENT ? '/app/data/ratings.json' : path.join(__dirname, 'ratings.json');
 
 // 🔹 Read ratings.json
 function readRatings() {
     try {
         if (!fs.existsSync(ratingsPath)) {
-            return { users: [] }; // No file yet
+            return { users: [] };
         }
         const data = fs.readFileSync(ratingsPath, 'utf8').trim();
         if (!data) {
-            return { users: [] }; // Empty file
+            return { users: [] };
         }
         return JSON.parse(data);
     } catch (err) {
         console.error('Error reading ratings.json:', err);
-        return { users: [] }; // Fallback
+        return { users: [] };
     }
 }
 
