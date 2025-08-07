@@ -80,12 +80,12 @@ Then visit: [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 🙋 Author
+##  Author
 
 👤 **Hassan** — Data Science Student at FAST NUCES, Lahore
 
 - 🔗 [GitHub Profile](https://github.com/HassanNawaz14)
-- 📧 [Add your email/contact here if you like]
+- 📧 [e-mail](hafizhassan142003@gmail.com)
 
 ---
 
