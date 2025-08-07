@@ -35,12 +35,6 @@
 
 ---
 
-## 📷 Screenshots
-
-Coming soon…
-
----
-
 ## 🚀 Getting Started (for Developers)
 
 ### Prerequisites
@@ -90,14 +84,14 @@ Then visit: [http://localhost:3000](http://localhost:3000)
 
 👤 **Hassan** — Data Science Student at FAST NUCES, Lahore
 
-- 🔗 [GitHub Profile](https://github.com/your-username)
+- 🔗 [GitHub Profile](https://github.com/HassanNawaz14)
 - 📧 [Add your email/contact here if you like]
 
 ---
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License.
 
 ---
 
@@ -107,7 +101,7 @@ If you found this useful, consider:
 
 - ⭐ Starring the repo
 - 🔁 Sharing with your friends
-- 🧠 Trying out your own collaborative filtering logic!
+- 🧠 Rate as musch movies as you can on production!
 
 ---
 
