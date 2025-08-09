@@ -100,7 +100,7 @@ function getRecommendations(matrix, currentVec, movieIds) {
   })).sort((a, b) => b.score - a.score);
 }
 
-//Store Ratings and Display recommendations
+//Store Ratings call and Display recommendations
 async function submitRatings() {
     await saveNewUserRatings();
     const movieIds = allMovies.map(m => m.id);
@@ -125,8 +125,11 @@ async function submitRatings() {
       const movie = allMovies.find(m => m.id === rec.id);
       const div = document.createElement("div");
       div.classList.add("movie");
+      const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(movie.title + " movie")}`;
       div.innerHTML = `
-          <img src="https://image.tmdb.org/t/p/w200${movie.poster_path}" />
+          <a href="${googleSearchUrl}" target="_blank">
+            <img src="https://image.tmdb.org/t/p/w200${movie.poster_path}" />
+          </a><br>
           <br><strong class="movie-title">${movie.title}</strong>
           <br>Score: ${rec.score.toFixed(2)}
       `;
